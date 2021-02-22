@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+
+
+
+{% block body %}
+
+    {% for j in job %}
+        {{ j.name }}
+        {{ j.description }}<br>
+    {% endfor %}
+
+
+
+
+
+{% endblock %}
