@@ -6,8 +6,9 @@
 {% block body %}
 
     {% for j in job %}
-        {{ j.name }}
+        {{j.name}}
         {{ j.description }}<br>
+       <img src="{{asset('uploads/')}}{{j.image}}" style="width:300px;height:300px" alt="">
     {% endfor %}
 
 

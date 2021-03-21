@@ -1,16 +1,8 @@
+
 {% extends 'base.html.twig' %}
-
-
-
-
-{% block body %}
-<form method="Post" route="{{  }}">
-<div clas="form-group>
-<label>name</label>
-<input type="text" name="name" class="form-control">
-<label>desc</label>
-<input type="text" name="description" class="form-control">
-<input type="submit" name="add">
-</div>
-</form>
+{% block title %} new Job{% endblock %}
+{% block body %} {{ form_start(form) }}
+{{ form_widget(form) }}
+<button type="submit" class="btn btn-success">Créer</button>
+{{ form_end(form) }}
 {% endblock %}
